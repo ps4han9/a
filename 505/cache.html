@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html lang="ar" dir="rtl" manifest="cache.manifest">
 <head>
-<title>PS4 5.05 FW Host v2.5 by GamerHack</title>
-<link rel="stylesheet" href="../style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GAME SHOP - Offline Cache</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Cairo', sans-serif; 
+    background-color: #0a0a0a; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('../bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center;
+  }
+  .cache-box {
+    background: rgba(15, 15, 15, 0.85); 
+    backdrop-filter: blur(10px);
+    padding: 40px; 
+    border-radius: 12px; 
+    border: 1px solid rgba(249, 115, 22, 0.3); 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.9), 0 0 25px rgba(249, 115, 22, 0.2); 
+    width: 90%;
+    max-width: 400px;
+  }
+  h1 { 
+    color: #f97316; 
+    font-family: 'Share Tech Mono', monospace; 
+    font-size: 38px; 
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.7); 
+    letter-spacing: 2px;
+    direction: ltr;
+  }
+  #msgs { 
+    font-size: 18px; 
+    color: #fdba74; 
+    margin-top: 20px; 
+    font-weight: bold;
+  }
+  .loader { 
+    margin: 25px auto; 
+    border: 4px solid rgba(249, 115, 22, 0.2); 
+    border-top: 4px solid #f97316; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    animation: spin 1s linear infinite; 
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+  }
+  @keyframes spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+  }
+</style>
 </head>
 <body>
+
 <script>
-history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
-function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+history.replaceState(null,null,'index.html');
+var histlength=history.length;
+history.go(-histlength);
+
+function DLProgress(e){
+  Percent=(Math.round(e.loaded / e.total * 100));
+  window.msgs.innerHTML="⏳ جاري تخزين الملفات أوفلاين: " + Percent + "%";
+}
+
+function DisplayCacheProgress(){
+  window.msgs.innerHTML="تم التخزين بنجاح ✔";
+  window.msgs.style.color = "#00ff66";
+  setTimeout(function(){
+    window.msgs.innerHTML="الآن أغلق المتصفح وأعد فتحه...";
+  },1500);
+}
+
 window.applicationCache.addEventListener("progress",DLProgress,false);
 window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+window.applicationCache.onerror=function(e){
+  window.msgs.innerHTML="⚠️ حدث خطأ! امسح بيانات المتصفح وأعد المحاولة...";
+  window.msgs.style.color = "#ef4444";
+};
 </script>
-<h1>PS4 5.05 FW Host v2.5 by GamerHack</h1>
-<hr>
-<br>
-<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Starting Cache Installation...</h1>
-<h1 style="margin-top: 105px;">Special Thanks to:<a href="https://twitter.com/_AlAzif" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@_AlAzif</a>Leeful<a href="https://twitter.com/SpecterDev" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@SpecterDev</a>SiSTR0<a href="https://twitter.com/Prb29327239" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Prb29327239</a></h1>
+
+<div class="cache-box">
+  <h1>GAME SHOP</h1>
+  <div class="loader"></div>
+  <div id="msgs">جاري بدء التخزين...</div>
+</div>
+
 </body>
 </html>
