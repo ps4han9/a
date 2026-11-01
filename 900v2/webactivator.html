@@ -1,44 +1,40 @@
-<html>
-<link rel="stylesheet" href="../style.css">
-<body>
-<h1 style="margin-top: 17px;">محمد خالد للشروحات صيانه تهكير 07714434273 !!!</h1>
-<hr><br><br><br><br><br><br><br><br><br><br><br><h1 style="font-size:30px;">This will take a time between 20 and 40 seconds ...</h1>
-<div style="opacity: 0">
-<p><i>Italic text</i></p>
-<table>
-<tr>
-<th>H1</th>
-<th>H2</th>
-<th>H3</th>
-</tr>
-<tr>
-<td>text</td>
-<td><input value="text"/></td>
-<td><button>text</button></td>
-</tr>
-</table>
-</div>
-<script>
-function loadScript(path)
-{
-    var xhr = new XMLHttpRequest(path);
-    xhr.open("GET", path, false);
-    xhr.send('');
-    return xhr.responseText;
-}
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #0a0a0a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('../bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #f97316 !important;
+    font-family: 'Share Tech Mono', 'Cairo', sans-serif;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+    letter-spacing: 1px;
+  }
 
-setTimeout(function(){
-eval.call(window, loadScript('netcat.js')
-+loadScript('exploit.js')
-+loadScript('malloc.js')
-+loadScript('rop2.js')
-+loadScript('syscalls.js')
-+loadScript('syscalls2.js')
-+loadScript('payload.js')
-+loadScript('relocator.js')
-+loadScript('frontend.js'));
-document.getElementById('q').innerHTML = 'Some other text';
-}, 50);
-</script>
-</body>
-</html>
+  /* تنسيق النصوص التنبيهية مثل مدة الانتظار */
+  h1[style*="font-size:30px"] {
+    color: #fdba74 !important;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 22px !important;
+  }
+
+  hr {
+    border-color: rgba(249, 115, 22, 0.3);
+    width: 80%;
+    margin: 20px auto;
+  }
+</style>
