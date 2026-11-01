@@ -1,32 +1,80 @@
-<!DOCTYPE html>
-<html><head>
-<title>PS4 Restore Host to User's Guide</title>
-<link rel="stylesheet" href="../style.css">
-</head>
-<body>
-<h1 id="msgs">PS4 Restore Host to User's Guide</h1>
-<hr>
-<br>
-<h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
-<button class="btn" onmouseover="msgs.innerHTML='Restore PS4 5.05 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'" onclick="location.replace('505goldhen/index.html')"> 5.05 FW GoldHEN </button>
-<button class="btn" onmouseover="msgs.innerHTML='Restore PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'" onclick="location.replace('505/index.html')"> 5.05 FW v2.5 </button>
-<br>
-<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 6.72 FW GoldHEN Host with Automatic Exploitation'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 6.72 FW GoldHEN </button></a>
-<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 6.72 FW v3.0 </button></a>
-<a href="702/payload.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 7.02 FW Host v1.4'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 7.02 FW v1.4 </button></a>
-<a href="75x/payload.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 7.50 - 7.55 FW Host v1.5'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 7.50 - 7.55 FW v1.5 </button></a>
-<br>
-<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 9.00 FW GoldHEN Host - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 9.00 FW GoldHEN </button></a>
-<a href="900v2/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 9.00 FW Host v2.8 with Manual Exploitation - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 9.00 FW v2.8 | Manual </button></a>
-<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore PS4 9.00 FW Host v3.0 with Automatic Exploitation - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 Restore Host to User&#8217;s Guide'"> 9.00 FW v3.0 | Auto </button></a>
-<br>
-<button class="btn" onclick="location.replace('../index.html')"> Return </button>
-<h1 style="margin-top: 276px;">Designed by:<a href="https://twitter.com/GamerHack93" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@GamerHack93</a>A special thanks to all the devs on the scene.</h1>
-<script>
-var jailbreak_start_date = localStorage.getItem("jailbreak_start_date");
-if (jailbreak_start_date !== null) {
-  localStorage.removeItem("jailbreak_start_date");
-}
-</script>
-</body>
-</html>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #0a0a0a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('../bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #f97316 !important;
+    font-family: 'Share Tech Mono', 'Cairo', sans-serif;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+    letter-spacing: 1px;
+  }
+
+  /* تنسيق رسالة الحالة والعنوان */
+  #msgs {
+    color: #fdba74 !important;
+    font-size: 24px !important;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+
+  hr {
+    border-color: rgba(249, 115, 22, 0.3);
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* تنسيق الأزرار بشكل عصري يطابق ستايل المتجر */
+  .btn {
+    background: rgba(15, 15, 15, 0.9);
+    color: #fff;
+    border: 1px solid #f97316;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  }
+
+  .btn:hover {
+    background: #f97316;
+    color: #000;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.8);
+    transform: translateY(-2px);
+  }
+
+  h1[style*="margin-top: 276px"] {
+    font-size: 15px !important;
+    color: #9ca3af !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover button.btn {
+    background: #f97316;
+    color: #000;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.8);
+    transform: translateY(-2px);
+  }
+</style>
