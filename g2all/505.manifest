@@ -1,11 +1,13 @@
 CACHE MANIFEST 
+# Version 2.0
 
 CACHE: 
 ../img.jpg
+../bg.jpg
 ../style.css
 goldhen_2.4b18.12.bin
 index.html
-505\exploit.js
+505/exploit.js
 
 NETWORK: 
-* 
+*
