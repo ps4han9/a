@@ -1,6 +1,8 @@
 CACHE MANIFEST 
+# Version 3
 
 ../img.jpg
+../bg.jpg
 ../style.css 
 exp_loader.js
 goldhen_2.4b18.10.bin
