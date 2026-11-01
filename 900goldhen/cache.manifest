@@ -1,7 +1,9 @@
 CACHE MANIFEST 
+# Version 2.0
 
 CACHE: 
 ../img.jpg
+../bg.jpg
 ../style.css
 goldhen_2.4b18.10.bin
 index.html
