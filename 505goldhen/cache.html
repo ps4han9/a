@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
   body {
     background-color: #0a0a0a;
@@ -14,11 +14,17 @@
   }
   
   h1 {
-    color: #f97316 !important;
-    text-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+    font-family: 'Share Tech Mono', 'Cairo', sans-serif;
+    letter-spacing: 1px;
   }
 
-  /* تنسيق رسالة جاري التثبيت */
+  /* تنسيق شريط العدادات العلوي */
+  h1 font[color="white"] {
+    color: #fdba74 !important;
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+  }
+
+  /* تنسيق رسالة التحميل الأساسية */
   #msgs {
     color: #fdba74 !important;
     background: rgba(20, 20, 20, 0.8);
@@ -35,15 +41,12 @@
     margin: 20px auto;
   }
 
-  /* تنسيق الروابط (أسماء المطورين) */
   a {
-    color: #f97316 !important;
     text-decoration: none;
     transition: all 0.3s ease;
   }
-
+  
   a:hover {
-    color: #fdba74 !important;
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.8);
+    text-shadow: 0 0 10px rgba(243, 20, 20, 0.8);
   }
 </style>
