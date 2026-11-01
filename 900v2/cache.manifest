@@ -1,7 +1,9 @@
 CACHE MANIFEST 
+# Version 3.0
 
 CACHE: 
 ../img.jpg
+../bg.jpg
 ../style.css
 app2usb.bin
 backup.bin
@@ -58,5 +60,4 @@ webkit.js
 webrte.bin
 
 NETWORK: 
-* 
-
+*
