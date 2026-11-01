@@ -1,23 +1,40 @@
-<!DOCTYPE html>
-<html manifest="900.manifest">
-<head>
-<title>محمد خالد للشروحات صيانه تهكير 07714434273</title>
-<link rel="stylesheet" href="../style.css">
-</head>
-<body>
-<script>
-history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="جارٍ تثبيت ذاكرة التخزين المؤقت دون اتصال بالإنترنت: " + Percent + "%";}
-function DisplayCacheProgress(){window.msgs.innerHTML="تم تثبيت ذاكرة التخزين المؤقت بنجاح. ✔";setTimeout(function(){window.msgs.innerHTML="الآن أغلق المتصفح وأعد فتحه...";},1500);}
-window.applicationCache.addEventListener("progress",DLProgress,false);
-window.applicationCache.oncached=function(e){DisplayCacheProgress();};
-window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
-</script>
-<h1>محمد خالد للشروحات صيانه تهكير 07714434273</h1>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #0a0a0a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('../bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #f97316 !important;
+    font-family: 'Share Tech Mono', 'Cairo', sans-serif;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+    letter-spacing: 1px;
+  }
 
-<br>
-<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">جارٍ تثبيت ذاكرة التخزين المؤقت ...</h1>
-<h1 style="margin-top: 43px;"></h1>
-</body>
-</html>
+  /* تنسيق رسالة حالة التثبيت */
+  #msgs {
+    color: #fdba74 !important;
+    font-size: 24px !important;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+
+  hr {
+    border-color: rgba(249, 115, 22, 0.3);
+    width: 80%;
+    margin: 20px auto;
+  }
+</style>
